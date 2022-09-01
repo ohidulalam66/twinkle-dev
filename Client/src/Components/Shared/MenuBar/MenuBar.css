@@ -1,0 +1,6 @@
+menu {
+  z-index: 2;
+  position: fixed;
+  transform: translate(-50%);
+  bottom: 2rem;
+}

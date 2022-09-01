@@ -1,11 +1,11 @@
 import React from "react";
-import "./HeroBar.css";
+import "./TopBlog.css";
 
-const HeroBar = () => {
+const TopBlog = () => {
   return (
     <>
-      <section id="#">
-        <p className="text-xl">Home</p>
+      <section id="blog">
+        <p className="text-xl">Blog</p>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
           similique quam enim eligendi ut voluptatem vero et voluptates ipsum
@@ -25,4 +25,4 @@ const HeroBar = () => {
   );
 };
 
-export default HeroBar;
+export default TopBlog;
