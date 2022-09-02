@@ -4,11 +4,31 @@
 
 /* Body use font  */
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
-
 /* Hero Name Use font */
 /* @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap"); */
 /* font-family: "Secular One", sans-serif; */
 
 * {
   font-family: "Signika Negative", sans-serif;
+  scroll-behavior: smooth;
+  cursor: url(./assets/cursor.png), auto;
+}
+::-webkit-scrollbar {
+  width: 1.3em;
+}
+
+::-webkit-scrollbar-track {
+  background: #057f7590;
+  border-radius: 100vh;
+  margin-block: 0.3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d9488;
+  border: 0.25em solid #15edd760;
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #024a44;
 }

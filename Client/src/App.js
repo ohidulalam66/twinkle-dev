@@ -14,7 +14,7 @@ import { useTheme } from "./Hooks/useTheme";
 const App = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="sm:px-20 md:px-20">
+    <div className="px-10 md:px-40 snap-y h-screen overflow-scroll overflow-x-hidden">
       {theme === "light" ? (
         <BsMoonStarsFill
           size="30"

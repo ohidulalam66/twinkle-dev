@@ -4,7 +4,7 @@ import "./MenuBar.css";
 
 const MenuBar = () => {
   const Menus = [
-    { name: "Home", href: "#", icon: "home", dis: "translate-x-0" },
+    { name: "Home", href: "#home", icon: "home", dis: "translate-x-0" },
     {
       name: "Portfolio",
       href: "#portfolio",
@@ -40,7 +40,7 @@ const MenuBar = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="flex justify-center opacity-80 menu">
+    <div className="menu">
       <div className="flex justify-center bg-slate-900 dark:bg-slate-200 text-slate-200 dark:text-slate-900 max-h-[4.4rem] w-96 md:w-auto rounded-2xl">
         <ul className="flex relative">
           <span
@@ -55,9 +55,7 @@ const MenuBar = () => {
                 onClick={() => setActive(i)}
               >
                 <span
-                  className={`text-xl cursor-pointer duration-500 ${
-                    i === active && "-mt-6"
-                  }`}
+                  className={`text-xl duration-500 ${i === active && "-mt-6"}`}
                 >
                   <ion-icon name={menu.icon}></ion-icon>
                 </span>
