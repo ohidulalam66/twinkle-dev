@@ -11,7 +11,7 @@ const App = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="px-10 md:px-40 snap-y h-screen overflow-scroll overflow-x-hidden">
+    <div className="snap-y h-screen overflow-scroll overflow-x-hidden">
       <BrowserRouter>
         <Bar theme={theme} setTheme={setTheme} />
         <Routes>
