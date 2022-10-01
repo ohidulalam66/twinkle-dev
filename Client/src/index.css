@@ -5,8 +5,7 @@
 /* Body use font  */
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
 /* Hero Name Use font */
-/* @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap"); */
-/* font-family: "Secular One", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 * {
   font-family: "Signika Negative", sans-serif;

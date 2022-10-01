@@ -1,42 +1,34 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React from "react";
 import "./Bar.css";
 import { MdWbSunny } from "react-icons/md";
 import { BsMoonStarsFill } from "react-icons/bs";
+import { useTheme } from "../../../Hooks/useTheme";
 
-const Bar = ({ theme, setTheme }) => {
-  // const [scroll, setScroll] = useState(false);
-
-  // useEffect(() => {
-  //   window.onscroll = () => {
-  //     if (window.scrollY > 50) {
-  //       setScroll(true);
-  //     } else {
-  //       setScroll(false);
-  //     }
-  //   };
-  // }, []);
+const Bar = () => {
+  const { theme, setTheme } = useTheme();
 
   return (
     <>
-      <nav className="flex w-full mx-auto py-2 px-4 bg-slate-200 dark:bg-slate-900 shadow-lg navbar navbar-expand-lg navbar-light sticky top-0 z-50">
+      <nav className="flex w-9/12 navbar-expand-lg mx-auto py-2 px-4 bg-slate-900 dark:bg-slate-200 fixed top-0 rounded-3xl">
         <div className="container-fluid w-full">
           <img
-            src="https://i.postimg.cc/q781QnjG/twinkle-dev.png"
-            alt=""
-            className="w-48"
+            src="https://i.postimg.cc/66gQyDCs/ohid-DEV.png"
+            alt="DEV"
+            className="w-24"
           />
         </div>
         <div className="flex items-center">
           {theme === "light" ? (
             <BsMoonStarsFill
               size="30"
-              className="cursor-pointer text-slate-900 dark:text-slate-200"
+              className="cursor-pointer text-slate-200 dark:text-slate-900"
               onClick={() => setTheme("dark")}
             />
           ) : (
             <MdWbSunny
               size="30"
-              className="cursor-pointer text-slate-900 dark:text-slate-200"
+              className="cursor-pointer text-slate-200 dark:text-slate-900"
               onClick={() => setTheme("light")}
             />
           )}

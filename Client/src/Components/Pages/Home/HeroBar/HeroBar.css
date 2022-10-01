@@ -1,0 +1,17 @@
+.heroPic {
+  border-radius: 14rem 14rem 0 0;
+  background: linear-gradient(#0eaea0, transparent);
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+.socialLink::before {
+  content: "";
+  width: 1.5px;
+  height: 2rem;
+  background: #0d9488;
+}
+.socialLink::after {
+  content: "";
+  width: 1.5px;
+  height: 2rem;
+  background: #0d9488;
+}
